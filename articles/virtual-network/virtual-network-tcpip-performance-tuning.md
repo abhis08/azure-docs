@@ -66,7 +66,7 @@ It's important to note that this fragmentation doesn't imply the Azure Virtual N
 
 Azure's Virtual Network stack today is configured to drop "Out of Order Fragments" - meaning fragmented packets that don't arrive in their original fragmented order. These packets are dropped primarily due to a network security vulnerability announced in November 2018 called FragmentStack.
 
-FragmentSmack is a defect in the way the Linux kernel handled reassembly of fragmented IPv4 and IPv6 packets. A remote attacker could use this flaw to trigger expensive fragment reassembly operations, which lead to increased CPU and a denial of service on the target system.
+FragmentStack is a defect in the way the Linux kernel handled reassembly of fragmented IPv4 and IPv6 packets. A remote attacker could use this flaw to trigger expensive fragment reassembly operations, which lead to increased CPU and a denial of service on the target system.
 
 #### Tune the MTU
 
